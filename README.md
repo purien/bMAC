@@ -7,14 +7,14 @@ See IETF Draft https://tools.ietf.org/html/draft-urien-core-bmac-05 for details
    
    In classical keyed MACs, MAC is computing according to a fixed order. 
    
-   In the bijective MAC, the content of N addresses {A(0)...A(N-1)} is hashed according to a hash function H, and a permutation P (i.e. bijective application in the range 0...N-1 so that : 
+   In the bijective MAC, the content of N addresses {A(0)...A(N-1)} is hashed according to a hash function H, and a permutation P(x) (i.e. bijective application with x in the range 0...N-1) so that : 
     
     bMAC(A, P) = H( A(P(0)) || A(P(1)) ... || A(P(N-1) ).
    
     For time stamped bMAC (bMAC_TS), the computing time (CT) is exored with the bMAC :
     bMAC_TS = bMAC exor CT
     
-   The bijective MAC key is the permutation P. 
+   The bijective MAC key is the permutation P(x). 
    
    The number of permutations for N addresses is N!, as an illustration 35! isgreater than 2^128. So the bMAC computation requires the knowledge of the whole space memory. This is trivial for genuine software, but could very difficult for corrupted software, especially for time stamped bMAC.
    
