@@ -34,9 +34,11 @@ See IETF Draft https://tools.ietf.org/html/draft-urien-core-bmac-05 for details
    
    g1 g2 being generators in Z/pZ*, s1 an integer in the range 1...p-1, y in the range 1...p-1, x in the range 0...p-2
    
-   F(y) = g2^(s1.g1^y) mod p  
+   F(y) = g2^(s1.g1^y) mod p 
    
    P(x) = F(x+1)-1
+   
+   The number of P permutations is (p-1).(q-1)^2 = 11,545,817,414,038 (more than 2^43)
    
    
    
