@@ -18,7 +18,7 @@ See IETF Draft https://tools.ietf.org/html/draft-urien-core-bmac-05 for details
    
    The number of permutations for N addresses is N!, as an illustration 35! is greater than 2^128. So the bMAC computation requires the knowledge of the whole space memory. This is trivial for genuine software, but could very difficult for corrupted software, especially for time stamped bMAC.
    
-   A corrupted software may use a compression/decompression algorithm in order to compute a correct bMAC value. The basic principle of the time stamped bMAC is that the code compression algorithm modifies the time needed for the bMAC computing. Furthermore we assume that the time required by the bMAC computing is dependent on the permutation.
+   A corrupted software may use a compression/decompression algorithm in order to compute a correct bMAC value. The basic principle of the time stamped bMAC is that the decompression algorithm modifies the time needed for the bMAC computing. Furthermore we assume that the time required by the bMAC computing is dependent on the permutation.
    
    Roughly speaking the bMAC computing time follows a normal distribution.
    
@@ -26,7 +26,7 @@ See IETF Draft https://tools.ietf.org/html/draft-urien-core-bmac-05 for details
    
    The ATmega memory size is therefore (32+2+1)KB = 35840 bytes 
    
-   The observed computing time average is 6782679 (with 4us resolution i.e. 27,130176s), and standard deviation is 3122 (with 4us resolution, i.e. 12,488 ms)
+   The observed computing time average is 6782679 (with 4us resolution i.e. 27,130176s), and standard deviation is 3122 (with 4us resolution, i.e. 12,488 ms). The computing time entropy, for 3 standard devivations (3.3122= 9366) is about 10 bits.
    
    Permutations (P) are based on generators in the group Z/pZ* with p safe prime, p=35879=2q+1 and q=17939 (Sophie Germain prime) with p=7 mod 8. 
    
