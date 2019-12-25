@@ -26,7 +26,7 @@ See IETF Draft https://tools.ietf.org/html/draft-urien-core-bmac-05 for details
    
    Permutations (P) are based on generators in the group Z/pZ* with p safe prime, p=35879=2q+1 and q=17939 (Sophie Germain prime) with p=7 mod 8. 
    
-   Generator gk are computed as gk = p - (2^k mod p), with k in the randge 1...q-1
+   Generator gk are computed as gk = p - (2^k mod p), with k in the range 1...q-1
    
    g1 g2 being generators in Z/pZ*, s1 an integer in the range 1...p-1, y in the range 1...p-1, x in the range 0...p-2
    
