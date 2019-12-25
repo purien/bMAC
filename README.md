@@ -26,7 +26,7 @@ See IETF Draft https://tools.ietf.org/html/draft-urien-core-bmac-05 for details
    
    The ATmega memory size is therefore (32+2+1)KB = 35840 bytes 
    
-   The observed computing time average is 6782679 (with 4us resolution i.e. 27,130176s), and standard deviation is 3122 (with 4us resolution, i.e. 12,488 ms). The computing time entropy, for 3 standard devivations (3.3122= 9366) is about 10 bits.
+   The observed computing time average is 6782679 (with 4us resolution i.e. 27,130176s), and standard deviation is 3122 (with 4us resolution, i.e. 12,488 ms). The computing time entropy, for 3 standard devivations (3.3122= 9366) is about 13 bits.
    
    Permutations (P) are based on generators in the group Z/pZ* with p safe prime, p=35879=2q+1 and q=17939 (Sophie Germain prime) with p=7 mod 8. 
    
