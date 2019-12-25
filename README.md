@@ -1,5 +1,6 @@
 # bMAC
 Bijective MAC Time Stamped demonstration code for Arduino
+
 See IETF Draft https://tools.ietf.org/html/draft-urien-core-bmac-05 for details
    
    The goal of the bijective MAC (bMAC) is to compute an integrity value, which cannot be guessed by malicious software. 
