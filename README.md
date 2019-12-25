@@ -16,7 +16,7 @@ See IETF Draft https://tools.ietf.org/html/draft-urien-core-bmac-05 for details
     
    The bijective MAC key is the permutation P(x). 
    
-   The number of permutations for N addresses is N!, as an illustration 35! isgreater than 2^128. So the bMAC computation requires the knowledge of the whole space memory. This is trivial for genuine software, but could very difficult for corrupted software, especially for time stamped bMAC.
+   The number of permutations for N addresses is N!, as an illustration 35! is greater than 2^128. So the bMAC computation requires the knowledge of the whole space memory. This is trivial for genuine software, but could very difficult for corrupted software, especially for time stamped bMAC.
    
    A corrupted software may use a compression/decompression algorithm in order to compute a correct bMAC value. The basic principle of the time stamped bMAC is that the code compression algorithm modifies the time needed for the bMAC computing. Furthermore we assume that the time required by the bMAC computing is dependent on the permutation.
    
