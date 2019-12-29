@@ -1,5 +1,5 @@
 # bMAC
-Bijective MAC Time Stamped demonstration code for Arduino
+Bijective MAC Time Stamped demonstration code for Arduino Nano
 
 See IETF Draft https://tools.ietf.org/html/draft-urien-core-bmac-05 for details
    
