@@ -1,5 +1,7 @@
 # bMAC
-Bijective MAC Time Stamped demonstration code for Arduino Nano
+bMAC.ino () is a test program, written for for Arduino Nano, which implements the  bijective MAC Time Stamped (bMAC_TS) algorithm.
+
+
 
 See IETF Draft https://tools.ietf.org/html/draft-urien-core-bmac-05 for details
    
